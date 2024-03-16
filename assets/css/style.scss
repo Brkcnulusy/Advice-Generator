@@ -1,0 +1,125 @@
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    @media (max-width: 400px) {
+        padding: 25px;
+    }
+
+    .advice-wrapper {
+        padding: 20px;
+        background-color: var(--Dark-Grayish-Blue);
+        border-radius: 10px;
+        width: 375px;
+        height: fit-content;
+        position: relative;
+        padding-bottom: 50px;
+
+        .advice {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+
+            &-id {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h4 {
+                    color: var(--Neon-Green);
+                }
+            }
+
+            &-message {
+                width: 100%;
+                height: fit-content;
+                text-align: center;
+
+                p {
+                    font-size: 18px;
+                    color: var(--Light-Cyan);
+                }
+            }
+
+            &-image {
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                }
+            }
+
+            &-button {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 50%;
+                bottom: -25px;
+                transform: translateX(-50%);
+
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: var(--Neon-Green);
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+
+                    &:hover,
+                    :active {
+                        -webkit-box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 1);
+                        -moz-box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 1);
+                        box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 1);
+                    }
+
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        inset: 0;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

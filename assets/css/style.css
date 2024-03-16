@@ -1,0 +1,111 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-Blue);
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 25px;
+  }
+}
+.container .advice-wrapper {
+  padding: 20px;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+  width: 375px;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  padding-bottom: 50px;
+}
+.container .advice-wrapper .advice {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.container .advice-wrapper .advice-id {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .advice-wrapper .advice-id h4 {
+  color: var(--Neon-Green);
+}
+.container .advice-wrapper .advice-message {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.container .advice-wrapper .advice-message p {
+  font-size: 18px;
+  color: var(--Light-Cyan);
+}
+.container .advice-wrapper .advice-image {
+  width: 100%;
+  height: auto;
+}
+.container .advice-wrapper .advice-image img {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.container .advice-wrapper .advice-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+.container .advice-wrapper .advice-button button {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container .advice-wrapper .advice-button button:hover,
+.container .advice-wrapper .advice-button button :active {
+  box-shadow: 0px 0px 30px 5px rgb(82, 255, 168);
+}
+.container .advice-wrapper .advice-button button img {
+  width: 20px;
+  height: 20px;
+  inset: 0;
+}/*# sourceMappingURL=style.css.map */
