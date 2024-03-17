@@ -2,7 +2,7 @@
 - Bir tavsiye apisine bağlıdır ve zar butonuna bastığımızda yeniden farklı bir tavsiyeye istek atıp ekrana yazdırdığımız bir sitedir.
 
 ### Links
-- Site Url'i: [Advice-Generator](https://brkcnulusy.github.io/Tas-Kagit-Makas/)
+- Site Url'i: [Advice-Generator](https://brkcnulusy.github.io/Advice-Generator/)
 
 ### Genel Bakış
 - Sonradan farklı geliştirmeler yada eklemelerin yapılabilmesi için modüler yapı ile kurulmuştur. 
